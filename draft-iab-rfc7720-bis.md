@@ -1,7 +1,7 @@
 ---
 title: DNS Root Name Service Protocol and Deployment Requirements
 abbrev: RSS Requirements
-docname: draft-rssac-caucus-rfc7720bis-00
+docname: draft-iab-rfc7720-bis-00
 
 stand_alone: true
 v: 3
