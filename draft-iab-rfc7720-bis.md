@@ -26,10 +26,15 @@ author:
    org: USC/ISI
    email: ietf@hardakers.net
  -
-   ins: M. Kosters
-   name: Mark Kosters
-   org: Network Solutions
-   email: markk@netsol.com
+   ins: M Blanchet
+   name: M Blanchet
+   org: Viagenie
+   email: Marc.Blanchet@viagenie.ca
+ - 
+   ins: L. Liman
+   name: Lars-Johan Liman
+   org: Netnod Internet Exchangen
+   email: liman@netnod.se
 
 normative:
   RFC8174:
