@@ -6,7 +6,7 @@
 # All are assumed to be on the path, but you can override these
 # in the environment, or command line.
 
-all: draft-iab-rfc7720-bis.xml draft-iab-rfc7720-bis.txt draft-iab-rfc7720-bis.html
+all: draft-iab-rfc7720-bis.xml draft-iab-rfc7720-bis.txt draft-iab-rfc7720-bis.html README.txt
 
 # Mandatory:
 #   https://pypi.python.org/pypi/xml2rfc
