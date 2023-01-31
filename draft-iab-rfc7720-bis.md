@@ -21,11 +21,6 @@ pi:
 
 author:
  -
-   ins: W. Hardaker
-   name: Wes Hardaker
-   org: USC/ISI
-   email: ietf@hardakers.net
- -
    ins: M Blanchet
    name: M Blanchet
    org: Viagenie
@@ -35,6 +30,11 @@ author:
    name: Lars-Johan Liman
    org: Netnod Internet Exchangen
    email: liman@netnod.se
+ -
+   ins: W. Hardaker
+   name: Wes Hardaker
+   org: USC/ISI
+   email: ietf@hardakers.net
 
 normative:
   RFC8174:
@@ -53,6 +53,8 @@ informative:
   RFC4035:
   RFC6891:
   RFC7720:
+  RFC8976:
+  RFC9120:
   ARPAZONE:
     title: .ARPA Zone Management
     author:
@@ -73,32 +75,33 @@ informative:
 --- abstract
 
 The DNS root name service is a critical part of the Internet architecture.
-The protocol and deployment requirements for the DNS root name service are defined in this document.
-Operational requirements are out of scope.
+The DNS root name service's DNS protocol and deployment requirements are defined in this document.
+Operational requirements for the root name service are out of scope.
 
 --- middle
 
 # Introduction
 
-{{RFC2870}} discusses protocol and operational requirements for root
-name servers for the Internet's domain name system (DNS) protocol
-{{RFC1035}}.  Since its publication, both protocol and operational
-requirements have evolved.  It makes more sense now to separate the
-two sets of requirements into two separate documents.  This document
-only defines the protocol requirements and some deployment
-requirements.  The operational requirements that were defined in RFC
-2870 have been removed.  Operational requirements are now defined by
-the Root Server System Advisory Committee of ICANN and are documented
-in {{RSSAC-001}}.
+This document co-exists with a corresponding operational requirements
+document published by the Root Server System Advisory Committee of
+ICANN in {{RSSAC-001}} or any subsequent version.  Although intricately
+tied together, both of these documents may be updated at any time to
+reflect required updates to the protocol, deployment and operational
+requirements.  Further notes about the history of these documents is
+discussed in {{history}}.
+
 
 The root servers are authoritative servers of the unique {{RFC2826}}
 root zone (".") {{ROOTZONE}}.  They currently also serve the root-
 servers.net zone.  Some also serve the zone for the .arpa top-level
-domain {{ARPAZONE}} {{RFC3172}}.  This document describes the external
-interface of the root name servers from a protocol viewpoint of the
-service.  It specifies basic requirements for the Internet that DNS
-clients meet when interacting with a root name service over the
-public Internet.
+domain {{ARPAZONE}} {{RFC3172}}, although at the time of this writing
+there are plans to move the service for the .arpa top-level domain to
+different infrastructure {{RFC9120}}.
+
+This document describes the external interface of the root name
+servers from a protocol viewpoint of the service.  It specifies basic
+requirements for the Internet that DNS clients meet when interacting
+with a root name service over the public Internet.
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”,
 “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”,
@@ -106,17 +109,13 @@ and “OPTIONAL” in this document are to be interpreted as described in
 {{RFC8174}} when, and only when, they appear in all capitals, as shown here.
 
 
-## Relationship to RFC 2870
+## Relationship to RFC2870 and RFC7720
 
-This document obsoletes {{RFC2870}}.
-
-This document and {{RSSAC-001}} together functionally replace
-{{RFC2870}}.
+This document obsoletes both {{RFC2870}} and {{RFC7720}}.
 
 # Protocol Requirements
 
 This section describes the minimum high-level protocol requirements.
-Operative details are documented in {{RSSAC-001}}.
 
 The root name service:
 
@@ -137,6 +136,10 @@ checksum.
 
 - MUST implement extension mechanisms for DNS (EDNS(0)) {{RFC6891}}.
 
+- MUST support distributing Message Digests for DNS Zones {{RFC8976}}.
+
+- MAY support validating Message Digests for DNS Zones {{RFC8976}}.
+
 # Deployment Requirements
 
 The root name service:
@@ -149,20 +152,41 @@ valid IP address.
 # Security Considerations
 
 This document does not specify a new protocol.  However, the root
-name service is a key component of the Internet architecture and play
+name service is a key component of the Internet architecture and plays
 a key role into the overall security of the Internet {{RFC2826}}.
 Specific security considerations on the DNS protocols are discussed
 in their respective specifications.  The security considerations on
 the operational side of the root name servers are discussed in
-{{RSSAC-001}}.
+the corresponding document published by RSSAC ({{RSSAC-001}} or a
+subsequent version).
 
 --- back
+
+# History
+
+{{RFC2870}} originally discussed both the protocol and operational
+requirements for root name servers for the Internet's domain name
+system (DNS) protocol {{RFC1035}}.  Since its initial publication,
+both protocol and operational requirements have evolved.  The protocol
+requirements was later split into {{RFC7720}} and the operational
+requirements was moved to {{RSSAC-001}} and published by ICANN's Root
+Server System Advisory Committee (RSSAC).  These two documents
+functionally replaced {{RFC2870}}.  Similarly, this document now
+functionally replaces {{RFC7720}}.
+
+As both of these requirement sets are expected to evolve over time,
+the authors of both document sets hope to always keep them roughly in
+synchronization.  However, the latest version of both of these two
+documents should be consider the most recent set of requirements
+regardless of whether they were published together or separately.
+
 
 # Acknowledgements
 
 This document was prepared by the ICANN RSSAC Caucus with participation of many Caucus members.
 
-Some text was taken from {{RFC2870}}.
+Much of this text is a rearrangement and restatement of {{RFC7720}},
+which itself contains text was taken from {{RFC2870}}.
 
 The editors of this document would like to sincerely thank the following individuals for valuable
 contributions to the text of {{RFC7720}}:
