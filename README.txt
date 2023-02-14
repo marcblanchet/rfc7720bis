@@ -6,13 +6,13 @@ Network Working Group                                        M. Blanchet
 Internet-Draft                                                  Viagenie
 Obsoletes: 7720 (if approved)                                   L. Liman
 Intended status: Best Current Practice         Netnod Internet Exchangen
-Expires: 3 August 2023                                       W. Hardaker
+Expires: 18 August 2023                                      W. Hardaker
                                                                  USC/ISI
-                                                         30 January 2023
+                                                        14 February 2023
 
 
        DNS Root Name Service Protocol and Deployment Requirements
-                        draft-iab-rfc7720-bis-00
+                   draft-hardaker-iab-rfc7720-bis-00
 
 Abstract
 
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 August 2023.
+   This Internet-Draft will expire on 18 August 2023.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 1]
+Blanchet, et al.         Expires 18 August 2023                 [Page 1]
 
-Internet-Draft              RSS Requirements                January 2023
+Internet-Draft              RSS Requirements               February 2023
 
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 2]
+Blanchet, et al.         Expires 18 August 2023                 [Page 2]
 
-Internet-Draft              RSS Requirements                January 2023
+Internet-Draft              RSS Requirements               February 2023
 
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
@@ -165,9 +165,9 @@ Internet-Draft              RSS Requirements                January 2023
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 3]
+Blanchet, et al.         Expires 18 August 2023                 [Page 3]
 
-Internet-Draft              RSS Requirements                January 2023
+Internet-Draft              RSS Requirements               February 2023
 
 
 4.  Security Considerations
@@ -221,9 +221,9 @@ Internet-Draft              RSS Requirements                January 2023
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 4]
+Blanchet, et al.         Expires 18 August 2023                 [Page 4]
 
-Internet-Draft              RSS Requirements                January 2023
+Internet-Draft              RSS Requirements               February 2023
 
 
    [RFC2460]  Deering, S. and R. Hinden, "Internet Protocol, Version 6
@@ -277,9 +277,9 @@ Internet-Draft              RSS Requirements                January 2023
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 5]
+Blanchet, et al.         Expires 18 August 2023                 [Page 5]
 
-Internet-Draft              RSS Requirements                January 2023
+Internet-Draft              RSS Requirements               February 2023
 
 
    [RSSAC-001]
@@ -333,9 +333,9 @@ Authors' Addresses
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 6]
+Blanchet, et al.         Expires 18 August 2023                 [Page 6]
 
-Internet-Draft              RSS Requirements                January 2023
+Internet-Draft              RSS Requirements               February 2023
 
 
    Lars-Johan Liman
@@ -389,4 +389,4 @@ Internet-Draft              RSS Requirements                January 2023
 
 
 
-Blanchet, et al.          Expires 3 August 2023                 [Page 7]
+Blanchet, et al.         Expires 18 August 2023                 [Page 7]
