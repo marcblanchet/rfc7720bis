@@ -158,6 +158,13 @@ subsequent version).
 
 --- back
 
+# Working version of this document
+
+This document is being worked on within the following github repo.
+Issues and pull requests are welcomed:
+
+https://github.com/marcblanchet/rfc7720bis
+
 # History
 
 ## Changes between RFC7720 and this document
