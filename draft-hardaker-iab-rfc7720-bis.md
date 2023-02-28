@@ -136,10 +136,6 @@ checksum.
 
 - MUST implement extension mechanisms for DNS (EDNS(0)) {{RFC6891}}.
 
-- MUST support distributing Message Digests for DNS Zones {{RFC8976}}.
-
-- MAY support validating Message Digests for DNS Zones {{RFC8976}}.
-
 # Deployment Requirements
 
 The root name service:
@@ -168,7 +164,6 @@ subsequent version).
 
 Existing list of changes:
 
-- Added requirements for supporting Message Digests (RFC8976)
 - Changed instances of RSSAC-001 to also include subsequent versions
 - General restructuring to better document requirements vs a
   discussion of the document's history and changes
