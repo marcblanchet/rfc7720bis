@@ -164,6 +164,17 @@ subsequent version).
 
 # History
 
+## Changes between RFC7720 and this document
+
+Existing list of changes:
+
+- Added requirements for supporting Message Digests (RFC8976)
+- Changed instances of RSSAC-001 to also include subsequent versions
+- General restructuring to better document requirements vs a
+  discussion of the document's history and changes
+
+## Changes between RFC2870 and RFC7720
+
 {{RFC2870}} originally discussed both the protocol and operational
 requirements for root name servers for the Internet's domain name
 system (DNS) protocol {{RFC1035}}.  Since its initial publication,
