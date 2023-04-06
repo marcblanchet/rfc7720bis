@@ -160,6 +160,8 @@ subsequent version).
 
 # Working version of this document
 
+[RFC Editor: please remove this section before publication]
+
 This document is being worked on within the following github repo.
 Issues and pull requests are welcomed:
 
