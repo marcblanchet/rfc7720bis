@@ -136,6 +136,18 @@ checksum.
 
 - MUST implement extension mechanisms for DNS (EDNS(0)) {{RFC6891}}.
 
+# Protocol Recommendations
+
+This section describes other recommendations to Root Server Operators.
+
+- SHOULD respond to queries that include an NSID [RFC5001] EDNS(0) option
+with an identifier that is unique for each instance. At the time this
+document is published, each root server operator deploys multiple instances,
+so the instance identifier for the NSID response SHOULD include a sub-string
+that identifies the root server operator. The identifier is only useful for
+debugging and does not necessarily indicate any attribute of the instance
+that is responding.
+
 # Deployment Requirements
 
 The root name service:
@@ -176,6 +188,8 @@ Existing list of changes:
 - Changed instances of RSSAC-001 to also include subsequent versions
 - General restructuring to better document requirements vs a
   discussion of the document's history and changes
+- Added a section for Protocol Recommendations
+- Added a recommendation to support NSID
 
 ## Changes between RFC2870 and RFC7720
 
